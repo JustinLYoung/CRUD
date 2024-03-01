@@ -5,10 +5,10 @@
 # You can also use environment variables
 
 # For Local Devlelopment
-host = 'localhost'
-user = 'root'                                   # can be different if you set up another username in your MySQL installation
-passwd = 'nottellingyou'                        # set accordingly
-db = 'bsg'
+host = 'classmysql.engr.oregonstate.edu'
+user = 'CS_340youngj9'                                   # can be different if you set up another username in your MySQL installation
+passwd = '2754'                        # set accordingly
+db = 'CS_340youngj9'
 
 
 # For OSU Flip Servers

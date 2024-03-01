@@ -11,6 +11,7 @@ user = os.environ.get("340DBUSER")
 passwd = os.environ.get("340DBPW")
 db = os.environ.get("340DB")
 
+
 def connect_to_database(host = host, user = user, passwd = passwd, db = db):
     '''
     connects to a database and returns a database objects
@@ -41,6 +42,7 @@ def execute_query(db_connection = None, query = None, query_params = ()):
     print("Executing %s with %s" % (query, query_params));
     # Create a cursor to execute query. Why? Because apparently they optimize execution by retaining a reference according to PEP0249
     cursor = db_connection.cursor(MySQLdb.cursors.DictCursor)
+    
 
     '''
     params = tuple()
@@ -54,6 +56,8 @@ def execute_query(db_connection = None, query = None, query_params = ()):
     # changes will be committed!
     db_connection.commit();
     return cursor
+
+
 
 if __name__ == '__main__':
     print("Executing a sample query on the database using the credentials from db_credentials.py")
